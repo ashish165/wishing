@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>HAPPY NEW YEAR </title>
+<link rel = "stylesheet" href = "proj1.css" type = "text/css">
+</head>
+
+<body bgcolor="black">
+</body>
+
+
+<!-- This is a content -->
+<div class = "content">
+HAPPY NEW YEAR
+<br>2021
+</div>
+
+<!-- create a button -->
+<body>
+<a href="C:\Users\g\OneDrive\Desktop\proj2.html">
+<button class="button" autofocus="autofocus"> CLICK HERE </button>
+</a>
+</body
+
+<!-- create a countdown -->
+<body>
+<div class = "countdown">
+<table>
+<tr class="info">
+<td colspan="4"> &#128151  &#128151 COUNTDOWN &#128151  &#128151 </td>
+</tr>
+<tr class="info">
+<td id="days">120</td>
+<td id="hours">4</td>
+<td id="minutes">12</td>
+<td id="second">22</td>
+</tr>
+<tr>
+<td>Days</td>
+<td>Hours</td>
+<td>Minutes</td>
+<td>Seconds</td>
+</tr>
+</table>
+<script type="text/javascript">
+function countdown()
+{
+var now = new Date();
+var eventDate = new Date(2020,12,1);
+
+var currentTime = now.getTime();
+var eventTime = eventDate.getTime();
+
+var realTime = eventTime - currentTime;
+
+var s = Math.floor(realTime / 1000);
+var m = Math.floor(s / 60);
+var h = Math.floor(m / 60);
+var d = Math.floor(h/ 24);
+
+h %=24;
+m %=60;
+s %=60;
+
+h = (h < 10) ? "0" +h : h;
+m= (m< 10) ? "0" + m : m;
+s= (s< 10) ? "0" + s : s;
+
+document.getElementById("days").innerText = d;
+document.getElementById("hours").textContent = h;
+document.getElementById("minutes").textContent =m;
+document.getElementById("second").textContent =s;
+
+setTimeout(countdown, 1000);
+}
+countdown();
+
+</script>
+</body>
+</div>
+
+<!-- create a Marquee -->
+
+<marquee class="m1" behavior="scroll" direction="up" scrolldelay="5" ">
+ &#128151 HAPPY &#128151 NEW &#128151 YEAR &#128151 
+</marquee> 
+
+ <marquee class ="m1" behavior="scroll" direction="down"   scrolldelay="5" height="30 width="30px">
+&#128151 HAPPY &#128151 NEW &#128151 YEAR &#128151 
+</marquee> 
+ 
+ <marquee class="m2" behavior="scroll" direction="up" scrolldelay="5"> 
+ &#128151 HAPPY &#128151 NEW &#128151 YEAR &#128151 
+</marquee> 
+
+ <marquee class ="m2" behavior="scroll" direction="down"   scrolldelay="5" height="30 width="30px">
+ &#128151 HAPPY &#128151 NEW &#128151 YEAR &#128151
+</marquee>
+
+
+<!-- Insert a audio -->
+<body>
+<audio class="audio" controls autoplay="yes" mobile="yes" src="C:\Users\g\Downloads/audio.mpeg" loop ></audio><br/>
+</body>
+
+
+
+</html>
